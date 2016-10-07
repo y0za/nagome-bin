@@ -1,0 +1,22 @@
+{
+  "name": "nagome-bin",
+  "version": "0.0.1",
+  "description": "Binary wrapper for Nagome",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/y0za/nagome-bin.git"
+  },
+  "keywords": [
+    "nagome"
+  ],
+  "author": "y0za",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/y0za/nagome-bin/issues"
+  },
+  "homepage": "https://github.com/y0za/nagome-bin#readme"
+}
