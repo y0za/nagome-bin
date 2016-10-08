@@ -10,10 +10,10 @@ if (bin === null) {
 
 var nagome = spawn(bin, args, { stdin: 'inherit' });
 
-nagome.stderr.on('data', (data) => {
+nagome.stderr.on('data', function (data) {
   console.log(data.toString('utf8'));
 });
-nagome.stdout.on('data', (data) => {
+nagome.stdout.on('data', function (data) {
   console.log(data.toString('utf8'));
 });
 nagome.on('exit', process.exit);
