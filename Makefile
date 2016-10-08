@@ -14,3 +14,4 @@ install:
 	curl -L $(URL_BASE){nagome_darwin_amd64} -o "$(DESTINATION)#1"
 	curl -L $(URL_BASE){nagome_linux_amd64} -o "$(DESTINATION)#1"
 	curl -L $(URL_BASE){nagome_windows_amd64.exe} -o "$(DESTINATION)#1"
+	chmod -R 755 bin/*
