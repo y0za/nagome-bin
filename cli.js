@@ -11,9 +11,9 @@ if (bin === null) {
 var nagome = spawn(bin, args, { stdin: 'inherit' });
 
 nagome.stderr.on('data', function (data) {
-  console.log(data.toString('utf8'));
+  process.stderr.write(data.toString('utf8'));
 });
 nagome.stdout.on('data', function (data) {
-  console.log(data.toString('utf8'));
+  process.stdout.write(data.toString('utf8'));
 });
 nagome.on('exit', process.exit);
