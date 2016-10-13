@@ -7,7 +7,7 @@
     "nagome": "cli.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "ava"
   },
   "repository": {
     "type": "git",
@@ -21,5 +21,9 @@
   "bugs": {
     "url": "https://github.com/y0za/nagome-bin/issues"
   },
-  "homepage": "https://github.com/y0za/nagome-bin#readme"
+  "homepage": "https://github.com/y0za/nagome-bin#readme",
+  "devDependencies": {
+    "ava": "^0.16.0",
+    "pify": "^2.3.0"
+  }
 }
