@@ -1,0 +1,13 @@
+---
+sudo: false
+language: node_js
+node_js:
+  - '0.12'
+  - '4'
+  - '5'
+  - '6'
+install:
+  - make
+  - npm install
+script:
+  - npm test
