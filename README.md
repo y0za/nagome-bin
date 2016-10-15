@@ -34,7 +34,7 @@ git pull
 # You should update version in package.json before execute 'make'
 make
 git tag v$(node -p 'require("./package.json").version')
-git push v$(node -p 'require("./package.json").version')
+git push origin v$(node -p 'require("./package.json").version')
 npm publish
 ```
 
