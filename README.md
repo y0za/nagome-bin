@@ -6,7 +6,18 @@
 
 Nagome is NicoLive Comment Viewer which has no UI written in Golang. When you use Nagome from Node.js, you can get its binary through npm without installing individually.
 
-# License
+## How to release
+```sh
+git checkout master
+git pull
+# You should update version in package.json before execute 'make'
+make
+git tag v$(node -p 'require("./package.json").version')
+git push v$(node -p 'require("./package.json").version')
+npm publish
+```
+
+## License
 MIT License
 
 
