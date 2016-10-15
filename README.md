@@ -1,6 +1,6 @@
 # nagome-bin
 
-[![Build Status](https://travis-ci.org/y0za/nagome-bin.svg?branch=master)](https://travis-ci.org/y0za/nagome-bin)
+[![npm version](https://badge.fury.io/js/nagome-bin.svg)](https://badge.fury.io/js/nagome-bin) [![Build Status](https://travis-ci.org/y0za/nagome-bin.svg?branch=master)](https://travis-ci.org/y0za/nagome-bin)
 
 > Binary wrapper for [Nagome](https://github.com/diginatu/nagome).
 
