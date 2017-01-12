@@ -28,14 +28,13 @@ execFile(nagome, ['-h'], (error, stdout) => {
 ```
 
 ## How to release
+`npm publish` is automated by Travis CI.
 ```sh
 git checkout master
 git pull
-# You should update version in package.json before execute 'make'
-make
-git tag v$(node -p 'require("./package.json").version')
+npm version <specify verion here> -m "Update version %s"
+git push origin master
 git push origin v$(node -p 'require("./package.json").version')
-npm publish
 ```
 
 ## License
