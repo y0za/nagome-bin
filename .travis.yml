@@ -4,8 +4,20 @@ node_js:
   - '4'
   - '5'
   - '6'
+before_install:
+  - if [[ `npm -v` != 3* ]]; then npm i -g npm@3; fi
 install:
   - make
   - npm install
+before_script:
+  - npm prune
 script:
   - npm test
+deploy:
+  skip_cleanup: true
+  provider: npm
+  api_key:
+    secure: AXnNWIgNx3d6uq83uQWBsqZjogWpWFWF1LIJY+ybOcRW0cckK3xW/kNBvgEsT1CQ0X0mKegr1VR5Huo4I+ktAwAv06Ub4EtoMeD3Ic7fBD+FulbXiuafC1De+bm2O+TeO67is8dQC7s4sZ+0mybyXc18qewC/xLO27Rw87tnXdv+332quMvKCXAxGIcsvclQOgKUNRcERXW4zIesIGJDTQi95m79ET6rzHXqbbbPUxSG6wviUN6ckN2zIBhQC00zxQx7JKEQLP2LV9WkclqIzqs8EIK/LsDvP2APpmaaJxdfRVI/cLsvUaj303idnXDfVWO+2l4LwRzE1ahq0vc7/Jk4hMrFr8SOHw8nNE7s4JpoMu34T5BLjm5Sc0Kj9lkPGajSCxrS4uIK1M6r3e2WXIWWcenp3mGalK+c+ax/sC+2KPs/npArKlrfeL2XTHwBouf4vPPaYaP+Vs9V7/h+GWJ/N6vgRwOtAF8K4LQueYWoRvFR8aZFssZFIgo2j3BGDhevliUzOIgjuLkXWU6uT8Z+pOo8aeE2HDgmQq1ZluDvz/qGnWbn4NvKIeFUss/mHp9M3Rm12mhtuXwd0H2oGtT8/p7rq/m031p2DFpnRBnFq5hRSKeN2lSigvJeO/4e4rNJMCc4ZqlsnF5LjAGpdejkBeU8qv8KJscBUOn792M=
+  on:
+    tags: true
+    node: 6
