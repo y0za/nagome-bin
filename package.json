@@ -24,6 +24,7 @@
   "homepage": "https://github.com/y0za/nagome-bin#readme",
   "devDependencies": {
     "ava": "^0.16.0",
+    "compare-versions": "^3.0.0",
     "pify": "^2.3.0"
   }
 }
