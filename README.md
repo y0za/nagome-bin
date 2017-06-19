@@ -40,4 +40,12 @@ git push origin v$(node -p 'require("./package.json").version')
 ## License
 MIT License
 
+## Dependencies
+These are the list of libraries that [Nagome v0.0.3](https://github.com/diginatu/nagome/tree/v0.0.3) depends on. Please refer to the [official information](https://github.com/diginatu/nagome/tree/master#dependencies) if you want to know the latest Nagome dependencies.
 
+* diginatu/nagome : MIT License
+    + gopkg.in/yaml.v2 : Apache Licence 2.0
+    + diginatu/nagome/nicolive
+        - gopkg.in/xmlpath.v2 : LGPLv3
+        - gopkg.in/yaml.v2 : Apache Licence 2.0
+        - github.com/syndtr/goleveldb : 2-Clause BSD License
