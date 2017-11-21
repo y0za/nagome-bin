@@ -1,6 +1,6 @@
 {
   "name": "nagome-bin",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "Binary wrapper for Nagome",
   "main": "index.js",
   "bin": {
