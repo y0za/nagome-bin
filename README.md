@@ -41,7 +41,7 @@ git push origin v$(node -p 'require("./package.json").version')
 MIT License
 
 ## Dependencies
-These are the list of libraries that [Nagome v0.0.5](https://github.com/diginatu/nagome/tree/v0.0.5) depends on. Please refer to the [official information](https://github.com/diginatu/nagome/tree/master#dependencies) if you want to know the latest Nagome dependencies.
+These are the list of libraries that [Nagome v0.0.6](https://github.com/diginatu/nagome/tree/v0.0.6) depends on. Please refer to the [official information](https://github.com/diginatu/nagome/tree/master#dependencies) if you want to know the latest Nagome dependencies.
 
 * diginatu/nagome : MIT License
     + gopkg.in/yaml.v2 : Apache Licence 2.0
